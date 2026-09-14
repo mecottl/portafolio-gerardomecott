@@ -50,7 +50,7 @@ export const featuredRepos: FeaturedRepo[] = [
     name: "WhoAmI",
     description: "Creador de plantillas para mostrar tu identidad y compartirla en redes sociales.",
     image: "/projects/whoami.png",
-    demoUrl: "https://whoami.vercel.app",
+    demoUrl: "https://app-whoami.vercel.app",
     tech: ["Angular", "NestJS", "Prisma", "Supabase"],
   },
   {
@@ -75,7 +75,7 @@ export const featuredRepos: FeaturedRepo[] = [
     name: "RecurStack",
     description: "Biblioteca de herramientas y recursos para desarrolladores web.",
     image: "/projects/recurstack.png",
-    demoUrl: "https://recur-stack.vercel.app",
+    demoUrl: "https://recurstack.vercel.app",
     tech: ["Astro", "TypeScript", "PostgreSQL"],
   },
   {

@@ -26,7 +26,7 @@ export const featuredRepos: FeaturedRepo[] = [
     name: "Modula",
     description: "Configurador de cotizaciones para proyectos inmobiliarios.",
     image: "/projects/modula.png",
-    tech: ["TypeScript", "Supabase", "Stripe"],
+    tech: ["Next.js", "Prisma", "Supabase", "Stripe"],
     inProgress: true,
   },
   {
@@ -42,7 +42,7 @@ export const featuredRepos: FeaturedRepo[] = [
     name: "BiblioHub",
     description: "Plataforma para descubrir, organizar y compartir libros.",
     image: "/projects/bibliohub.png",
-    tech: ["TypeScript"],
+    tech: ["Angular", "NestJS", "TypeORM", "PostgreSQL"],
     inProgress: true,
   },
   {
@@ -51,7 +51,7 @@ export const featuredRepos: FeaturedRepo[] = [
     description: "Creador de plantillas para mostrar tu identidad y compartirla en redes sociales.",
     image: "/projects/whoami.png",
     demoUrl: "https://whoami.vercel.app",
-    tech: ["NestJS", "Prisma", "Angular", "PostgreSQL"],
+    tech: ["Angular", "NestJS", "Prisma", "Supabase"],
   },
   {
     repo: "app-landing-privastravel",
@@ -59,7 +59,7 @@ export const featuredRepos: FeaturedRepo[] = [
     description: "Rediseño de la página de Privas Travel, agencia de viajes.",
     image: "/projects/privastravel.png",
     demoUrl: "https://privastravel.vercel.app",
-    tech: ["TypeScript"],
+    tech: ["React", "Vite", "Tailwind CSS"],
     inProgress: true,
   },
   {
@@ -84,7 +84,7 @@ export const featuredRepos: FeaturedRepo[] = [
     description: "Bloc de notas con predicción de texto impulsada por IA.",
     image: "/projects/noteflow.png",
     demoUrl: "https://noteflow3.vercel.app",
-    tech: ["Node.js", "PostgreSQL"],
+    tech: ["Express", "Supabase"],
   },
   {
     repo: "app-pos-mayaclean",
@@ -92,7 +92,7 @@ export const featuredRepos: FeaturedRepo[] = [
     description: "Sistema POS web para ventas y administración de una lavandería.",
     image: "/projects/mayaclean.png",
     demoUrl: "https://mayaclean.vercel.app",
-    tech: ["Next.js", "PostgreSQL"],
+    tech: ["JavaScript", "Express", "PostgreSQL"],
   },
   {
     repo: "app-landing-scprojects",
@@ -100,6 +100,6 @@ export const featuredRepos: FeaturedRepo[] = [
     description: "Rediseño de la página de SCProjects, firma de arquitectura.",
     image: "/projects/scprojects.png",
     demoUrl: "https://scprojects.vercel.app",
-    tech: ["TypeScript"],
+    tech: ["Astro", "TypeScript"],
   },
 ];

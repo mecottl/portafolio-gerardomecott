@@ -6,6 +6,7 @@ export interface Project {
   demoUrl?: string;
   githubUrl?: string;
   tech: string[];
+  inProgress?: boolean;
 }
 
 export interface FeaturedRepo {
@@ -15,6 +16,7 @@ export interface FeaturedRepo {
   demoUrl?: string;
   image?: string;
   tech?: string[];
+  inProgress?: boolean;
 }
 
 export const featuredRepos: FeaturedRepo[] = [
@@ -74,5 +76,29 @@ export const featuredRepos: FeaturedRepo[] = [
     image: "/projects/whoami.png",
     demoUrl: "https://whoami.vercel.app",
     tech: ["NestJS", "Prisma", "Angular", "PostgreSQL"],
+  },
+  {
+    repo: "project-monorepo-bibliohub",
+    name: "BiblioHub",
+    description: "Plataforma para descubrir, organizar y compartir libros.",
+    image: "/projects/bibliohub.png",
+    tech: ["TypeScript"],
+    inProgress: true,
+  },
+  {
+    repo: "privas-magazine",
+    name: "Privas Magazine",
+    description: "Plataforma editorial de la revista Privas.",
+    image: "/projects/privasmagazine.png",
+    tech: ["Angular", "Supabase"],
+    inProgress: true,
+  },
+  {
+    repo: "app-modula",
+    name: "Modula",
+    description: "Configurador de cotizaciones para proyectos inmobiliarios.",
+    image: "/projects/modula.png",
+    tech: ["TypeScript", "Supabase", "Stripe"],
+    inProgress: true,
   },
 ];

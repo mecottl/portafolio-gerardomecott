@@ -20,6 +20,7 @@ const hasRealDemo = project.demoUrl && project.demoUrl !== "#";
         </div>
       )
     }
+    {project.inProgress && <span class="in-progress-badge">En construcción</span>}
     <div class="project-overlay">
       <div class="project-links">
         {
@@ -59,6 +60,19 @@ const hasRealDemo = project.demoUrl && project.demoUrl !== "#";
 </div>
 
 <style>
+  .in-progress-badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 2;
+    padding: 0.25rem 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #fff;
+    background: #f59e0b;
+    border-radius: 999px;
+  }
+
   .project-image-placeholder {
     width: 100%;
     height: 100%;

@@ -10,7 +10,7 @@ import { fetchFeaturedRepos, socialPreviewImage } from "../lib/github";
 // los datos de todos los repos marcados como "featured".
 const githubRepos = await fetchFeaturedRepos(featuredRepos.map((f) => f.repo));
 
-const projects: Project[] = featuredRepos.map((entry) => {
+const projects: (Project & { createdAt: string })[] = featuredRepos.map((entry) => {
   const repo = githubRepos.get(entry.repo);
 
   const techFromRepo = repo?.topics?.length
@@ -19,16 +19,22 @@ const projects: Project[] = featuredRepos.map((entry) => {
       ? [repo.language]
       : [];
 
+  const image = entry.image ?? (repo ? socialPreviewImage(repo.name) : undefined);
+
   return {
     name: entry.name ?? repo?.name ?? entry.repo,
     description:
       entry.description ?? repo?.description ?? "Sin descripción disponible en GitHub.",
     demoUrl: entry.demoUrl ?? repo?.homepage ?? undefined,
     githubUrl: repo?.html_url ?? `https://github.com/mecottl/${entry.repo}`,
-    image: entry.image ?? (repo ? socialPreviewImage(repo.name) : undefined),
+    image,
     tech: entry.tech ?? techFromRepo,
+    inProgress: entry.inProgress ?? !image,
+    createdAt: repo?.created_at ?? "",
   };
 });
+
+projects.sort((a, b) => b.createdAt.localeCompare(a.createdAt));
 ---
 
 <Layout title="Proyectos - Gerardo Mecott" titlepage="Portafolio">

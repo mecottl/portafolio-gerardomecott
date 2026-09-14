@@ -7,6 +7,7 @@ export interface GithubRepo {
   html_url: string;
   topics: string[];
   language: string | null;
+  created_at: string;
 }
 
 /**

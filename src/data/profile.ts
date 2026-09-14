@@ -6,6 +6,12 @@ export interface TimelineEntry {
 
 export const experience: TimelineEntry[] = [
   {
+    title: "Desarrollador Frontend - Ubnk",
+    dateLabel: "2025 - presente",
+    description:
+      "Desarrollo de la interfaz de usuario de la aplicación Ubnk, colaborando en la construcción de nuevas funcionalidades y mejoras de la experiencia web.",
+  },
+  {
     title: "Desarrollador Full-Stack Junior - PlenumSoft",
     dateLabel: "2025 - 2027",
     description:

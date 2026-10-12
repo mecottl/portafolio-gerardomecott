@@ -34,8 +34,8 @@ export const featuredRepos: FeaturedRepo[] = [
     name: "Privas Magazine",
     description: "Plataforma editorial de la revista Privas.",
     image: "/projects/privasmagazine.png",
+    demoUrl: "https://privasmagazine.com",
     tech: ["Angular", "Supabase"],
-    inProgress: true,
   },
   {
     repo: "project-monorepo-bibliohub",

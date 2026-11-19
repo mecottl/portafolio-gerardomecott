@@ -17,10 +17,21 @@ export interface FeaturedRepo {
   image?: string;
   tech?: string[];
   inProgress?: boolean;
+  hideGithub?: boolean;
 }
 
 // Orden manual: de más nuevo a más viejo.
 export const featuredRepos: FeaturedRepo[] = [
+  {
+    repo: "mapte",
+    name: "MapTE",
+    description: "Navegación y planificación de rutas de exploración en Marte.",
+    image: "/projects/mapte.webp",
+    demoUrl: "https://mapte-ta1b.onrender.com",
+    tech: ["TypeScript"],
+    inProgress: true,
+    hideGithub: true,
+  },
   {
     repo: "app-modula",
     name: "Modula",
@@ -57,7 +68,6 @@ export const featuredRepos: FeaturedRepo[] = [
     repo: "app-landing-privastravel",
     name: "Privas Travel",
     description: "Rediseño de la página de Privas Travel, agencia de viajes.",
-    image: "/projects/privastravel.png",
     demoUrl: "https://privastravel.vercel.app",
     tech: ["React", "Vite", "Tailwind CSS"],
     inProgress: true,

@@ -27,7 +27,7 @@ const projects: Project[] = featuredRepos.map((entry) => {
     description:
       entry.description ?? repo?.description ?? "Sin descripción disponible en GitHub.",
     demoUrl: entry.demoUrl ?? repo?.homepage ?? undefined,
-    githubUrl: repo?.html_url ?? `https://github.com/mecottl/${entry.repo}`,
+    githubUrl: entry.hideGithub ? undefined : (repo?.html_url ?? `https://github.com/mecottl/${entry.repo}`),
     image,
     tech: entry.tech ?? techFromRepo,
     inProgress: entry.inProgress ?? !image,

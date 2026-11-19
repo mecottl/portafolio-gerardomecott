@@ -43,6 +43,12 @@ export const bioSummary =
 
 export const hackathons: TimelineEntry[] = [
   {
+    title: "NASA Space Apps Challenge",
+    dateLabel: "Octubre 2026",
+    description:
+      'Hackathon internacional de la NASA. Mi equipo y yo desarrollamos <strong>MapTE</strong>, una herramienta de navegación y planificación de rutas de exploración en Marte. <a href="/nasa-certificado.pdf" class="link" target="_blank" rel="noopener noreferrer">Certificado</a>.',
+  },
+  {
     title: "Hackathon 3.0",
     dateLabel: "Abril 2025",
     description:

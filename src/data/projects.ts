@@ -28,8 +28,7 @@ export const featuredRepos: FeaturedRepo[] = [
     description: "Navegación y planificación de rutas de exploración en Marte.",
     image: "/projects/mapte.webp",
     demoUrl: "https://mapte-ta1b.onrender.com",
-    tech: ["TypeScript"],
-    inProgress: true,
+    tech: ["React", "Python", "TypeScript"],
     hideGithub: true,
   },
   {
@@ -71,7 +70,6 @@ export const featuredRepos: FeaturedRepo[] = [
     image: "/projects/privastravel.webp",
     demoUrl: "https://privastravel.com",
     tech: ["React", "Vite", "Tailwind CSS"],
-    inProgress: true,
   },
   {
     repo: "app-when2play",
